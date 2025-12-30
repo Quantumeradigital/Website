@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantum Era Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <div class="logo">
+            <div class="logo-main">Quantum Era</div>
+            <div class="logo-sub">DIGITAL</div>
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="btn">Get a Quote</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Modern websites • SEO • Branding</div>
+        <h1>Web design that feels <span>future-proof</span>.</h1>
+        <p>
+          We build fast, elegant websites that convert. Clear messaging, clean visuals, and a
+          process that doesn’t melt your brain.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn large" href="#contact">Request a Quote</a>
+          <a class="btn large ghost" href="#services">See Services</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">Fast</div>
+            <div class="stat-label">Performance-first builds</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Clear</div>
+            <div class="stat-label">Messaging that converts</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Simple</div>
+            <div class="stat-label">No backend needed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="section-sub">Pick what you need. Combine anything. We’ll keep it tidy.</p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Website Design</h3>
+            <p>Custom responsive design that looks expensive (without actually being evil).</p>
+            <ul class="ticks">
+              <li>Landing pages & multi-page sites</li>
+              <li>Mobile-first layout</li>
+              <li>Performance + accessibility</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>SEO Foundations</h3>
+            <p>Solid search basics so Google can understand your site.</p>
+            <ul class="ticks">
+              <li>On-page SEO setup</li>
+              <li>Metadata + structure</li>
+              <li>Speed improvements</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Branding</h3>
+            <p>Visual identity + tone that matches what you actually do.</p>
+            <ul class="ticks">
+              <li>Logo & wordmark direction</li>
+              <li>Color + type direction</li>
+              <li>Simple brand kit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p class="section-sub">Simple tiers. Real projects vary — quotes are based on scope.</p>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-head">
+              <h3>Starter</h3>
+              <p class="price-desc">One page, clean + high converting.</p>
+            </div>
+
+            <div class="price-figure">
+              <div>
+                <div class="price">€499+</div>
+                <div class="price-meta fine">Typical: landing page</div>
+              </div>
+              <div class="price-note">1–2 weeks</div>
+            </div>
+
+            <ul class="ticks">
+              <li>Responsive design</li>
+              <li>Basic SEO setup</li>
+              <li>Quote request via mailto</li>
+            </ul>
+
+            <div class="price-foot">
+              <a href="#contact" class="btn wide">Request Quote</a>
+            </div>
+          </div>
+
+          <div class="price-card featured">
+            <div class="pill">Most Popular</div>
+            <div class="price-head">
+              <h3>Business</h3>
+              <p class="price-desc">Multi-page site for real businesses.</p>
+            </div>
+
+            <div class="price-figure">
+              <div>
+                <div class="price">€999+</div>
+                <div class="price-meta fine">Typical: 4–6 pages</div>
+              </div>
+              <div class="price-note">2–4 weeks</div>
+            </div>
+
+            <ul class="ticks">
+              <li>Custom sections + layout</li>
+              <li>SEO foundations</li>
+              <li>Analytics setup (optional)</li>
+            </ul>
+
+            <div class="price-foot">
+              <a href="#contact" class="btn wide">Request Quote</a>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <div class="price-head">
+              <h3>Premium</h3>
+              <p class="price-desc">Branding + site + polish.</p>
+            </div>
+
+            <div class="price-figure">
+              <div>
+                <div class="price">€1999+</div>
+                <div class="price-meta fine">Typical: brand + site</div>
+              </div>
+              <div class="price-note">4–6 weeks</div>
+            </div>
+
+            <ul class="ticks">
+              <li>Brand direction</li>
+              <li>Copy + content structure</li>
+              <li>Advanced sections</li>
+            </ul>
+
+            <div class="price-foot">
+              <a href="#contact" class="btn wide">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-copy">
+          <h2>About</h2>
+          <p class="section-sub">
+            We build websites that are clean, fast, and designed to get you enquiries —
+            without needing a backend or complicated setup.
+          </p>
+
+          <div class="about-points">
+            <div class="mini-card">
+              <div class="mini-title">1) Discovery</div>
+              <div class="mini-text">Goals, audience, examples.</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">2) Build</div>
+              <div class="mini-text">Design + responsive layout.</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">3) Launch</div>
+              <div class="mini-text">Polish, test, ship.</div>
+            </div>
+          </div>
+
+          <h3 class="about-subhead">Timeline</h3>
+          <div class="about-points timelines">
+            <div class="mini-card">
+              <div class="mini-title">Week 1</div>
+              <div class="mini-text">Direction + wireframes</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">Weeks 2–3</div>
+              <div class="mini-text">Design + build</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-title">Final</div>
+              <div class="mini-text">QA + launch</div>
+            </div>
+          </div>
+
+          <p class="about-note fine">Want it faster? We can sprint depending on scope.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <p class="section-sub">Quick answers to reduce email ping-pong.</p>
+
+        <div class="faq">
+          <button class="faq-q" type="button">
+            Do I need hosting?
+            <span class="chev">⌄</span>
+          </button>
+          <div class="faq-a" hidden>
+            You’ll need hosting + a domain. We can recommend options and help you connect it.
+          </div>
+        </div>
+
+        <div class="faq">
+          <button class="faq-q" type="button">
+           How long does a typical website take?
+            <span class="chev">⌄</span>
+          </button>
+          <div class="faq-a" hidden>
+Most projects take 2–4 weeks, depending on size and how ready your content is. Single-page sites can be 
+faster; branding or larger builds take longer. You’ll get a clear timeline before anything starts.          
+</div>
+        </div>
+
+        <div class="faq">
+          <button class="faq-q" type="button">
+            What should I include for a quote?
+            <span class="chev">⌄</span>
+          </button>
+          <div class="faq-a" hidden>
+            Business name, what you need built, example sites you like, timeline, and a budget range if possible.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2>Request a Quote</h2>
+        <p class="section-sub">
+          No backend. This opens your email app with a pre-filled quote request.
+        </p>
+
+        <form id="contactForm">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Service</span>
+            <select name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option>Website Design</option>
+              <option>Website Redesign</option>
+              <option>SEO</option>
+              <option>Branding</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Project details</span>
+            <textarea name="message" placeholder="Tell us what you need..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn large wide">Open Email to Request a Quote</button>
+          <p id="formStatus" class="fine" aria-live="polite">
+            This opens your email app with a pre-filled quote request.
+          </p>
+        </form>
+
+        <div class="email-checklist">
+          <div class="mini-card">
+            <div class="mini-title">What to include in your quote email</div>
+            <ul class="ticks">
+              <li>Business name + website (if you have one)</li>
+              <li>What you do + who your customers are</li>
+              <li>What you want built (pages + features)</li>
+              <li>2–3 example sites you like (links)</li>
+              <li>Brand assets (logo/colors) — or say you need branding help</li>
+              <li>Content status (text/photos ready or not)</li>
+              <li>Goal (calls, quote enquiries, bookings, sales)</li>
+              <li>Timeline (ideal launch date)</li>
+              <li>Budget range (rough is fine)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Quantum Era Digital</div>
+        <div class="fine">Built with speed, not suffering.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: nav toggle, faq accordion, year, mailto form -->
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById("navToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    if (navToggle && mobileNav) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = mobileNav.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      // Close menu when clicking a link
+      mobileNav.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          mobileNav.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    // FAQ accordion
+    document.querySelectorAll(".faq").forEach((wrap) => {
+      const btn = wrap.querySelector(".faq-q");
+      const ans = wrap.querySelector(".faq-a");
+      if (!btn || !ans) return;
+
+      btn.addEventListener("click", () => {
+        const hidden = ans.hasAttribute("hidden");
+        if (hidden) ans.removeAttribute("hidden");
+        else ans.setAttribute("hidden", "");
+      });
+    });
+
+    // Footer year
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+
+    // Contact form -> opens default email app (no backend)
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    // CHANGE THIS to your real email:
+    const QUOTE_EMAIL_TO = "hello@yourdomain.com";
+    const QUOTE_SUBJECT = "Quote Request — Quantum Era Digital";
+
+    function enc(v) {
+      return encodeURIComponent(v).replace(/[!'()*]/g, c =>
+        "%" + c.charCodeAt(0).toString(16).toUpperCase()
+      );
+    }
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = new FormData(contactForm);
+        const name = (data.get("name") || "").toString().trim();
+        const email = (data.get("email") || "").toString().trim();
+        const service = (data.get("service") || "").toString().trim();
+        const message = (data.get("message") || "").toString().trim();
+
+        if (!name || !email || !service || !message) {
+          if (formStatus) formStatus.textContent = "Please fill in all fields so we can draft your email.";
+          return;
+        }
+
+        const body = [
+          "Hi Quantum Era Digital,",
+          "",
+          "I'd like to request a quote. Here are my details:",
+          "",
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Service: ${service}`,
+          "",
+          "Project details:",
+          message,
+          "",
+          "Thanks!"
+        ].join("\n");
+
+        const mailtoUrl =
+          `mailto:${QUOTE_EMAIL_TO}` +
+          `?subject=${enc(QUOTE_SUBJECT)}` +
+          `&body=${enc(body)}`;
+
+        window.location.href = mailtoUrl;
+
+        if (formStatus) formStatus.textContent = "Opening your email app…";
+      });
+    }
+  </script>
+
+</body>
+</html>
