@@ -3,10 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quantum Era Digital</title>
+
+  <!-- Primary SEO -->
+  <title>Web Design & SEO Foundations | Quantum Era Digital</title>
+  <meta name="description" content="Quantum Era Digital builds fast, elegant websites that convert — with SEO foundations and branding. Landing pages, multi-page sites, and clean modern design." />
+  <link rel="canonical" href="https://quantumeradigital.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- UI / Mobile polish -->
+  <meta name="theme-color" content="#0b0f1a" />
+
+  <!-- Favicons (add these files on your server when you can) -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph (Social sharing) -->
+  <meta property="og:site_name" content="Quantum Era Digital" />
+  <meta property="og:title" content="Quantum Era Digital — Web Design, SEO & Branding" />
+  <meta property="og:description" content="Fast, elegant websites that convert — with SEO foundations and branding built in." />
+  <meta property="og:url" content="https://quantumeradigital.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://quantumeradigital.com/og-image.jpg" />
+
+  <!-- Twitter/X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quantum Era Digital — Web Design, SEO & Branding" />
+  <meta name="twitter:description" content="Fast, elegant websites that convert — with SEO foundations and branding built in." />
+  <meta name="twitter:image" content="https://quantumeradigital.com/og-image.jpg" />
+
+  <!-- Structured data (helps SEO understand the brand/site) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://quantumeradigital.com/#org",
+      "name":"Quantum Era Digital",
+      "url":"https://quantumeradigital.com/",
+      "description":"Web design, SEO foundations and branding for small businesses."
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://quantumeradigital.com/#website",
+      "url":"https://quantumeradigital.com/",
+      "name":"Quantum Era Digital",
+      "publisher":{"@id":"https://quantumeradigital.com/#org"}
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://quantumeradigital.com/#contact",
+      "url":"https://quantumeradigital.com/#contact",
+      "name":"Request a Quote",
+      "isPartOf":{"@id":"https://quantumeradigital.com/#website"}
+    }
+  ]
+}
+</script>
+
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+    Skip to content
+  </a>
 
   <!-- NAV -->
   <header class="nav">
@@ -43,8 +106,8 @@
   </header>
 
   <!-- HERO -->
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="top">
       <div class="container">
         <div class="hero-badge">Modern websites • SEO • Branding</div>
         <h1>Web design that feels <span>future-proof</span>.</h1>
@@ -84,7 +147,10 @@
         <div class="grid">
           <div class="card">
             <h3>Website Design</h3>
-            <p>Custom responsive design that looks expensive (without actually being evil).</p>
+            <p>
+              Custom responsive design that looks expensive (without actually being evil).
+              <a href="#pricing">See pricing</a> or <a href="#contact">request a quote</a>.
+            </p>
             <ul class="ticks">
               <li>Landing pages & multi-page sites</li>
               <li>Mobile-first layout</li>
@@ -94,17 +160,28 @@
 
           <div class="card">
             <h3>SEO Foundations</h3>
-            <p>Solid search basics so Google can understand your site.</p>
+            <p>
+              Solid search basics so Google can understand your site.
+              <a href="#faq">Check the FAQ</a> or <a href="#contact">ask about SEO</a>.
+            </p>
             <ul class="ticks">
               <li>On-page SEO setup</li>
               <li>Metadata + structure</li>
               <li>Speed improvements</li>
             </ul>
+            <p class="fine" style="margin-top:12px;">
+              We can also help you set up
+              <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google’s search essentials</a>
+              and Search Console.
+            </p>
           </div>
 
           <div class="card">
             <h3>Branding</h3>
-            <p>Visual identity + tone that matches what you actually do.</p>
+            <p>
+              Visual identity + tone that matches what you actually do.
+              <a href="#about">How we work</a> is explained below.
+            </p>
             <ul class="ticks">
               <li>Logo & wordmark direction</li>
               <li>Color + type direction</li>
@@ -139,7 +216,7 @@
             <ul class="ticks">
               <li>Responsive design</li>
               <li>Basic SEO setup</li>
-              <li>Quote request via mailto</li>
+              <li>Quote request via email</li>
             </ul>
 
             <div class="price-foot">
@@ -211,6 +288,11 @@
             without needing a backend or complicated setup.
           </p>
 
+          <p class="fine">
+            Prefer email? Reach us at
+            <a href="mailto:quantum.eradigital@outlook.com">quantum.eradigital@outlook.com</a>.
+          </p>
+
           <div class="about-points">
             <div class="mini-card">
               <div class="mini-title">1) Discovery</div>
@@ -254,7 +336,7 @@
         <p class="section-sub">Quick answers to reduce email ping-pong.</p>
 
         <div class="faq">
-          <button class="faq-q" type="button">
+          <button class="faq-q" type="button" aria-expanded="false">
             Do I need hosting?
             <span class="chev">⌄</span>
           </button>
@@ -264,23 +346,24 @@
         </div>
 
         <div class="faq">
-          <button class="faq-q" type="button">
-           How long does a typical website take?
+          <button class="faq-q" type="button" aria-expanded="false">
+            How long does a typical website take?
             <span class="chev">⌄</span>
           </button>
           <div class="faq-a" hidden>
-Most projects take 2–4 weeks, depending on size and how ready your content is. Single-page sites can be 
-faster; branding or larger builds take longer. You’ll get a clear timeline before anything starts.          
-</div>
+            Most projects take 2–4 weeks, depending on size and how ready your content is. Single-page sites can be
+            faster; branding or larger builds take longer. You’ll get a clear timeline before anything starts.
+          </div>
         </div>
 
         <div class="faq">
-          <button class="faq-q" type="button">
+          <button class="faq-q" type="button" aria-expanded="false">
             What should I include for a quote?
             <span class="chev">⌄</span>
           </button>
           <div class="faq-a" hidden>
             Business name, what you need built, example sites you like, timeline, and a budget range if possible.
+            You can also <a href="#contact">use the quote form</a>.
           </div>
         </div>
       </div>
@@ -292,6 +375,7 @@ faster; branding or larger builds take longer. You’ll get a clear timeline bef
         <h2>Request a Quote</h2>
         <p class="section-sub">
           No backend. This opens your email app with a pre-filled quote request.
+          Or email us directly: <a href="mailto:quantum.eradigital@outlook.com">quantum.eradigital@outlook.com</a>.
         </p>
 
         <form id="contactForm">
@@ -382,7 +466,7 @@ faster; branding or larger builds take longer. You’ll get a clear timeline bef
       });
     }
 
-    // FAQ accordion
+    // FAQ accordion (+ aria-expanded)
     document.querySelectorAll(".faq").forEach((wrap) => {
       const btn = wrap.querySelector(".faq-q");
       const ans = wrap.querySelector(".faq-a");
@@ -390,8 +474,13 @@ faster; branding or larger builds take longer. You’ll get a clear timeline bef
 
       btn.addEventListener("click", () => {
         const hidden = ans.hasAttribute("hidden");
-        if (hidden) ans.removeAttribute("hidden");
-        else ans.setAttribute("hidden", "");
+        if (hidden) {
+          ans.removeAttribute("hidden");
+          btn.setAttribute("aria-expanded", "true");
+        } else {
+          ans.setAttribute("hidden", "");
+          btn.setAttribute("aria-expanded", "false");
+        }
       });
     });
 
@@ -404,7 +493,7 @@ faster; branding or larger builds take longer. You’ll get a clear timeline bef
     const formStatus = document.getElementById("formStatus");
 
     // CHANGE THIS to your real email:
-    const QUOTE_EMAIL_TO = "hello@yourdomain.com";
+    const QUOTE_EMAIL_TO = "hello@quantumeradigital.com";
     const QUOTE_SUBJECT = "Quote Request — Quantum Era Digital";
 
     function enc(v) {
