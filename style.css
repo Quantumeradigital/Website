@@ -9,6 +9,7 @@
 
   --brand1:#7C5CFF;
   --brand2:#27E0B3;
+
   --radius:18px;
   --max:1120px;
   --shadow:0 12px 40px rgba(0,0,0,.45);
@@ -30,6 +31,47 @@ body{
 a{color:inherit;text-decoration:none}
 .container{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
 .container.narrow{max-width:720px}
+
+/* Skip link (keyboard accessibility) */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:12px;
+  padding:.6rem .9rem;
+  border-radius:999px;
+  background: rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  color: var(--text);
+  z-index:9999;
+}
+.skip-link:focus{
+  left:12px;
+}
+
+/* Clear keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline: 2px solid var(--brand2);
+  outline-offset: 3px;
+}
+
+/* Placeholder contrast */
+::placeholder{
+  color: rgba(234,240,255,.55);
+}
+
+/* Make inline links inside text look like links */
+p a, .fine a, .card a, .faq-a a{
+  text-decoration: underline;
+  text-decoration-color: rgba(39,224,179,.55);
+  text-underline-offset: 3px;
+}
+p a:hover, .fine a:hover, .card a:hover, .faq-a a:hover{
+  text-decoration-color: rgba(39,224,179,.9);
+}
 
 /* NAV */
 .nav{
@@ -77,6 +119,9 @@ a{color:inherit;text-decoration:none}
   background:transparent;border:1px solid rgba(255,255,255,.12);
   align-items:center;justify-content:center;
   gap:5px;flex-direction:column;
+}
+.nav-toggle:hover{
+  background: rgba(255,255,255,.05);
 }
 .nav-toggle span{
   width:20px;height:2px;background:rgba(234,240,255,.85);
@@ -321,6 +366,12 @@ input, textarea, select{
   color: var(--text);
   outline: none;
 }
+
+select option{
+  background:#070A12;
+  color:#EAF0FF;
+}
+
 textarea{min-height:140px;resize:vertical}
 
 /* Contact checklist spacing */
